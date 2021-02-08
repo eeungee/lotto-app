@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#container{
+	width: 360px;
+	text-align: center;
+	margin: 0 auto;
+	font-family: 'GimpoTitle00';
+}
+
+header{
+	font-size: 20px;
+	margin: 20px auto;
+}
+
+.js-numbers{
+	display: flex;
+	
+	/* 자식요소가 많아져 크기가 overflow 됐을 때, 행 추가를 한다!! */
+	flex-wrap: wrap;
+}
+
+.js-numbers > div{
+	width: 50px;
+	height: 36px;
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+}
+
+.number{
+	border: 1px solid lightgray;
+	border-radius: 10px;
+}
+
+.ing{
+	visibility: hidden;
+}
+
+.visible{
+	visibility: visible;
+}
+
+.result > div{
+	display: flex;
+	justify-content: center;
+	border: 1px solid lightgray;
+	border-radius: 15px;
+	margin: 0 0 10px 0;
+}
+
+.result > div > div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px; 
+	margin: 8px;
+	border-radius: 50%;
+	color: white;
+}
+
+.js-reset{
+	display: none;
+}
+
+.selected > p{
+	color: white;
+	background-color: orangered;
+}
+
+button{
+	background-color: coral;
+	font-family: 'GimpoTitle00';
+	color: white;
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	border: none;
+	margin: 10px auto;
+}
+
+@font-face {
+	font-family: 'GimpoTitle00';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/GimpoTitle00.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
